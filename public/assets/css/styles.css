@@ -1,0 +1,515 @@
+.filmes-grid, .picsum-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-card, .filme-card {
+  width: 150px; 
+  height: 250px; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  background-color: #222;
+  margin: 35px;
+}
+
+.image-card img, .filme-card img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.filme-card {
+  text-align: center;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #111;
+  padding: 1em 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.menu li a {
+  color: #fcd34d;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #fff;
+}
+
+body {
+  font-family: sans-serif;
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background: #222;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.site-header h1 {
+  margin: 0;
+}
+
+.menu-nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.menu-nav a {
+  color: #f5c518;
+  text-decoration: none;
+}
+
+.site-main {
+  padding: 20px;
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-pesquisa {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+
+.form-pesquisa input, .form-pesquisa button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.filmes-section .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.filmes-section .card {
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.filmes-section .card img {
+  width: 100%;
+  display: block;
+}
+
+.filmes-section .card-content {
+  padding: 10px;
+}
+
+.filmes-section .card-content h3 {
+  margin: 0 0 5px;
+}
+
+.filmes-section .card-content .card-rating {
+  color: #f5c518;
+  font-weight: bold;
+}
+
+.picsum-section .picsum-grid {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.site-footer {
+  background: #222;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+#filme-detalhes img {
+  max-width: 250px; 
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 68px;
+}
+
+.fotos-detalhes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.fotos-detalhes img {
+  width: 100%;
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.manual-navigation {
+  position: absolute;
+  width: 800px;
+  margin-top: -24px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.manual-btn:hover{
+  background-color: white;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+
+.navigation-auto div{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 376px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 30px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.882);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.caption h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.caption p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.footer-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-box {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.about-box {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+@media (max-width: 480px) {
+  .image-card, .filme-card {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .site-footer {
+    font-size: 0.8rem;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .manual-btn {
+    font-size: 1.2rem;
+  }
+
+  .slider-container {
+    width: 60%;
+    padding: 0 10px; 
+  }
+
+  .slides {
+    width: 600%;
+  }
+  
+  .slider img {
+    width: 50%; 
+    height: 100%;
+  }
+
+  main, footer {
+    width: 100%;
+    height: 100%; 
+    box-sizing: border-box; 
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #poster-gallery {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #poster-gallery h2 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .image-card, .filme-card {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  footer {
+    width: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    background: #222;
+    font-size: 0.8rem;
+  }
+
+  .footer-information {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-box {
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-box {
+    text-align: center;
+  }
+
+  .slider {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slides {
+    width: 400%;
+    height: 300px;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .manual-navigation {
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .manual-btn {
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .manual-btn:hover {
+    background: white;
+  }
+
+  .navigation-auto {
+    display: none;
+  }
+
+  .caption {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    max-width: 90%;
+  }
+
+  .caption h5 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .caption p {
+    font-size: 12px;
+    margin: 5px 0 0;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    width: 50px;
+  }
+}
