@@ -6,18 +6,18 @@ Nessa etapa, vamos evoluir o projeto anterior e contemplar um ambiente de desenv
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Bernardo Coelho Cezario
+- Matricula: 897259
+- Proposta de projeto escolhida: Filmes
+- Breve descrição sobre seu projeto: Mostra alguns dos filmes mais renomados e relata detalhes sobre cada um ao ser clicado.
 
 **Print do teste da API com visualização do JSON**
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Print da tela com entidade](public/img/Print_Entidade.png)
 
 **Print da aba NETWORK com requisições Fetch/XHR**
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Print da página com o método fetch](public/img/Fetch_Print.png)
 
 ## **Orientações Gerais**
 
